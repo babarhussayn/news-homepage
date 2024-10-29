@@ -20,11 +20,11 @@ const navbar: Nabar[] = [
     link: "/pop",
   },
   {
-    name: "New",
+    name: "Trending",
     link: "/new",
   },
   {
-    name: "New",
+    name: "Categories",
     link: "/new",
   },
 ];
@@ -32,12 +32,22 @@ const navbar: Nabar[] = [
 const Header = () => {
   return (
     <>
-      <div>
-        {navbar.map((items, index) => (
-          <div key={index}>
-            <Link href={items.link}>{items.name}</Link>
+      <div className="w-full flex justify-center items-center ">
+        <div className="flex justify-between items-center w-[1200px] p-4">
+          <div>
+            <h4 className="font-bold text-3xl font-inter">W.</h4>
           </div>
-        ))}
+
+          <div className="flex justify-center items-center gap-12">
+            {navbar.map((items, index) => (
+              <div key={index}>
+                <Link href={items.link} className="font-inter font-bold">
+                  {items.name}
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
