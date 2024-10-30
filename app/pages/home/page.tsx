@@ -126,9 +126,11 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <div className="">
-                  <h3 className="font-inter font-bold">Reviving Retro PCs</h3>
+                  <h3 className="font-inter font-bold">
+                    Top 10 Laptops of 2022
+                  </h3>
                   <p className="text-start">
-                    what happens when old Pcs are given modern upgrades?
+                    Our best picks for various needs and budgets.
                   </p>
                 </div>
               </div>
@@ -151,9 +153,9 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <div className="">
-                  <h3 className="font-inter font-bold">Reviving Retro PCs</h3>
+                  <h3 className="font-inter font-bold">The Growth of Gaming</h3>
                   <p className="text-start">
-                    what happens when old Pcs are given modern upgrades?
+                    How the pandemic has sparked fresh oppurtunities.
                   </p>
                 </div>
               </div>
