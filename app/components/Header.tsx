@@ -57,8 +57,8 @@ const Header = () => {
             </div>
           </div>
           <div className="md:hidden ">
-            {isShow ? (
-              <div>
+            <div>
+              {isShow || (
                 <Image
                   src="/images/icon-menu-close.svg"
                   alt="close"
@@ -66,37 +66,36 @@ const Header = () => {
                   height={50}
                   onClick={handleOpen}
                 />
-                <div
-                  className={`flex justify-center p-8 gap-8  flex-col absolute bg-white transition-all duration-150 ease-in w-[70%] h-full  ${
-                    isShow ? "translate-x-0" : "translate-x-full"
-                  }`}
-                  style={{ right: 0 }}
-                >
-                  {navbar.map((items, index) => (
-                    <>
-                      <div key={index}>
-                        <div className="">
-                          <Link
-                            href={items.link}
-                            className="font-inter font-bold"
-                          >
-                            {items.name}
-                          </Link>
-                        </div>
+              )}
+              <div
+                className={`flex justify-center right-0 flex-col absolute bg-white transition-all duration-300 ease-in h-full  ${
+                  isShow ? "w-0" : "w-[70%] p-8 gap-8"
+                }`}
+              >
+                {navbar.map((items, index) => (
+                  <>
+                    <div key={index}>
+                      <div className="">
+                        <Link
+                          href={items.link}
+                          className="font-inter font-bold"
+                        >
+                          {items.name}
+                        </Link>
                       </div>
-                    </>
-                  ))}
-                </div>
+                    </div>
+                  </>
+                ))}
               </div>
-            ) : (
-              <Image
-                src="/images/icon-menu.svg"
-                alt="close"
-                width={30}
-                height={50}
-                onClick={handleOpen}
-              />
-            )}
+            </div>
+
+            <Image
+              src="/images/icon-menu.svg"
+              alt="close"
+              width={30}
+              height={50}
+              onClick={handleOpen}
+            />
           </div>
         </div>
       </div>
