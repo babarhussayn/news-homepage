@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -35,7 +36,7 @@ const Header = () => {
       <div className="w-full flex justify-center items-center ">
         <div className="flex justify-between items-center w-[1200px] p-4">
           <div>
-            <h4 className="font-bold text-3xl font-inter">W.</h4>
+            <Image src="/images/logo.svg" alt="logo" width={70} height={10} />
           </div>
 
           <div className="flex justify-center items-center gap-12">
