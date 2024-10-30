@@ -56,7 +56,7 @@ const Header = () => {
               ))}
             </div>
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden ">
             {isShow ? (
               <div>
                 <Image
@@ -67,17 +67,24 @@ const Header = () => {
                   onClick={handleOpen}
                 />
                 <div
-                  className={`flex justify-center items-center gap-12 flex-col absolute bg-white transition-transform duration-150 ease-in w-[70%] h-full  ${
+                  className={`flex justify-center p-8 gap-8  flex-col absolute bg-white transition-all duration-150 ease-in w-[70%] h-full  ${
                     isShow ? "translate-x-0" : "translate-x-full"
                   }`}
                   style={{ right: 0 }}
                 >
                   {navbar.map((items, index) => (
-                    <div key={index}>
-                      <Link href={items.link} className="font-inter font-bold">
-                        {items.name}
-                      </Link>
-                    </div>
+                    <>
+                      <div key={index}>
+                        <div className="">
+                          <Link
+                            href={items.link}
+                            className="font-inter font-bold"
+                          >
+                            {items.name}
+                          </Link>
+                        </div>
+                      </div>
+                    </>
                   ))}
                 </div>
               </div>
