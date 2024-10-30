@@ -4,10 +4,10 @@ import React from "react";
 const HomePage = () => {
   return (
     <section className="w-full  flex justify-center items-center flex-col  container mx-auto">
-      <div className="w-[1200px] flex justify-center items-center gap-14">
+      <div className="md:w-[1200px] flex justify-center items-center gap-12 flex-col md:flex-row">
         <div className="flex justify-between  ">
-          <div className="w-[700px]">
-            <div className="w-full">
+          <div className="md:w-[800px]">
+            <div className="md:w-full p-4 md:p-0">
               <Image
                 src="/images/image-web-3-desktop.jpg"
                 alt="desktop"
@@ -15,15 +15,15 @@ const HomePage = () => {
                 height={500}
               />
             </div>
-            <div className="flex justify-center items-center gap-8">
-              <div className="w-full">
+            <div className="flex justify-center items-center gap-8 flex-col md:flex-row">
+              <div className="w-full flex justify-center items-center md:block">
                 <div className="mt-4">
-                  <h3 className="font-inter font-bold text-6xl">
+                  <h3 className="font-inter font-bold text-6xl p-4 md:p-0 ">
                     The Bright Future of Web 3.0?
                   </h3>
                 </div>
               </div>
-              <div className="w-full flex  items-center">
+              <div className="w-full flex  items-center md:p-0 p-4">
                 <div className="flex justify-center items-center flex-col gap-8">
                   <div>
                     <p>
@@ -42,8 +42,8 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className=" text-white w-[400px] bg-black">
-          <div className="bg-black h-[55vh]">
+        <div className=" text-white md:w-[400px] w-[350px] bg-black">
+          <div className="bg-black md:h-[55vh] h-[70vh]">
             <div className="flex justify-center items-center flex-col gap-4 ">
               <div className="flex justify-start w-full p-8">
                 <div className="">
@@ -83,7 +83,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mt-8 w-full">
-        <div className="w-[1200px] flex justify-center items-center gap-20">
+        <div className="md:w-[1200px] flex justify-center items-center gap-20 flex-col md:flex-row p-6 md:p-0">
           <div className="w-full">
             <div className="flex justify-center items-center gap-4">
               <div>
